@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # A Bash script that prints a message indefinitely and reacts to SIGTERM
 
-# Define a trap to handle SIGTERM and exit cleanly
-trap 'echo "OK"; exit 0' SIGTERM
+# Trap SIGTERM and exit cleanly with the expected output
+trap 'echo OK; 
+exit 0' SIGTERM
 
 # Infinite loop
 while true; do
     echo "To infinity and beyond"
     sleep 2
-ok
 done
