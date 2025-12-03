@@ -8,4 +8,5 @@ trap 'echo "OK"; exit 0' SIGTERM
 while true; do
     echo "To infinity and beyond"
     sleep 2
+ok
 done
