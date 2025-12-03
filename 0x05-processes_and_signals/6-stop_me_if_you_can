@@ -1,6 +1,5 @@
-#!/bin/bash/env bash
-
-pid=$(pgrep -f 4-to_infinity_and_beyond)
+#!/usr/bin/env bash
+pkill -f 4-to_infinity_and_beyond
 
 if [ -n "$pid" ]; then
     echo "15" > /proc/$pid/stat
