@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Script that stops 4-to_infinity_and_beyond
-if [ -n "$pid" ]; then
-     echo "15" > /proc/"$pid"/stat
-fi
+# Script that stops 4-to_infinity_and_beyond process without using kill or killall
+
+pkill -f "4-to_infinity_and_beyond"
